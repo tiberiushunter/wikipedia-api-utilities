@@ -10,6 +10,7 @@ namespace WikipediaAPIUtilities
     {
         static void Main(string[] args)
         {
+            Wikiwars w = new Wikiwars();
         }
     }
 }
