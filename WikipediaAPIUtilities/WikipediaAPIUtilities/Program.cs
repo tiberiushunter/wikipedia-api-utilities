@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WikipediaAPIUtilities
 {
@@ -19,6 +15,7 @@ namespace WikipediaAPIUtilities
             Console.WriteLine();
             Console.WriteLine("Please select an option below");
             Console.WriteLine("1 - WikiWars");
+            Console.WriteLine("2 - HTML");
             ConsoleKeyInfo _choice = Console.ReadKey();
             string _strChoice = _choice.KeyChar.ToString();
             startProgram(_strChoice);
@@ -30,6 +27,12 @@ namespace WikipediaAPIUtilities
             if (_strChoice == "1")
             {
                 Wikiwars w = new Wikiwars();
+                Console.WriteLine("Stating WikiWars");
+            }
+            else if (_strChoice == "2")
+            {
+                HTML h = new HTML();
+                Console.WriteLine("Stating HTML");
             }
             else
             {
